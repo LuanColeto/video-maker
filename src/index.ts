@@ -1,5 +1,12 @@
 import readline from "readline-sync";
 
+interface Content {
+  searchTerm: string;
+  prefix: string;
+}
+
+const content = {} as Content;
+
 const getSearchTerm = () => {
   const searchTerm = readline.question("Digite um termo de busca: ");
 
@@ -17,10 +24,10 @@ const getPrefix = () => {
 };
 
 const search = () => {
-  const searchTerm = getSearchTerm();
-  const prefix = getPrefix();
+  content.searchTerm = getSearchTerm();
+  content.prefix = getPrefix();
 
-  console.log(`Você quer buscar por: ${prefix} ${searchTerm}`);
+  console.log(`Você quer buscar por: ${content.prefix} ${content.searchTerm}`);
 };
 
 search();
