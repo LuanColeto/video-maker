@@ -1,0 +1,17 @@
+{
+  "name": "video-maker",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/LuanColeto/video-maker.git",
+  "author": "Luan Mota Coleto <luan@coleto.dev>",
+  "license": "MIT",
+  "scripts": {
+    "dev:server": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.8"
+  }
+}
