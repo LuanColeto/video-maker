@@ -1,9 +1,5 @@
 import readline from "readline-sync";
-
-interface Content {
-  searchTerm: string;
-  prefix: string;
-}
+import { Content } from "./types/content";
 
 const content = {} as Content;
 
